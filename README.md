@@ -5,7 +5,7 @@ A simple phot0app for editing basic color effects.
 ![PhotoApp](https://media.giphy.com/media/J2TjgDUEUuXuEbckcX/giphy.gif "Reference gif image")
 
 ## Technologies
-- Html
+- HTML
 - CSS
 - Javascript
 ## Features
