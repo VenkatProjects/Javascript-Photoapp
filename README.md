@@ -2,7 +2,7 @@
 
 A simple photoapp for editing basic color effects using this app.
 
-![App](https://media.giphy.com/media/Lkg0cWg7sj1IMWKdeh/giphy.gif "Reference gif image")
+![PhotoApp](https://media.giphy.com/media/Lkg0cWg7sj1IMWKdeh/giphy.gif "Reference gif image")
 
 - Javascript photoapp
 - Select the Photo from your directory
