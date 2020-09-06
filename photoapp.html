@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Photo Effects App</title>
     <style>
         html
@@ -11,7 +12,7 @@
         }
         body
         {
-            background:rgb(91, 105, 133);
+        
             display: flex;
             font-weight: bold;
             flex-direction: column;
@@ -24,6 +25,7 @@
         {
             flex: 1;
             margin-left: 0.5rem;
+            margin-top:0px;
         }
         button
         {
@@ -68,9 +70,89 @@
         }
         canvas
         {
-            width: 100%;
+            width:100%;
         }
-        @media(min-width:1000px)
+        .header{
+            text-align: center;
+            background: #e60c5f;
+            margin-top: 10px;
+
+        }
+        .contact-links
+        {
+            text-align: center;
+            padding-top:10px;
+            color:rgb(212,210,210);
+            font-size: 15px;
+            background:#e60c5f
+        }
+        p{
+            margin-top:0;
+            padding:0;
+        }
+        
+        .icon
+        {
+            font-size: 1.6rem;
+        }
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+          }
+          a:visited {
+            /* color: pink; */
+            color: rgb(224, 177, 20);
+            background-color: transparent;
+            text-decoration: none;
+          }
+          a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+          a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        main
+        {   
+            height:655px;
+            background-color: hsla(200,40%,30%,.4);
+            background-image:		
+            url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+            url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+            url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+            url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+            url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+            background-repeat: repeat-x;
+            background-position: 
+            0 20%,
+            0 100%,
+            0 50%,
+            0 100%,
+            0 0;
+            background-size: 
+            2500px,
+            800px,
+            500px 200px,
+            1000px,
+            400px 260px;
+            animation: 50s para infinite linear;
+        }
+
+        @keyframes para {
+            100% {
+                background-position: 
+                -5000px 20%,
+                -800px 95%,
+                500px 50%,
+                1000px 100%,
+                400px 0;
+            }
+        }  
+        @media(min-width:600px)
         {
             body{
                 flex-direction: row;
@@ -79,15 +161,20 @@
     </style>
     
 </head>
+
 <body>
+
     <main>
         <canvas id="canvas"></canvas>
     </main>
+
     <aside>
+        <h1 class="header">Javascript-Photoapp</h1>
         <div class="input-wrapper">
             <label for="uploader">Select File:</label>
             <input type="file" id="uploader" />
         </div>
+
         <div class="effects">
             <button>Greyscale</button>
             <button>Sepia effect</button>
@@ -97,12 +184,25 @@
             <button>RGB-GBR</button>
             <button>RGB-GRB</button>
         </div>
+
         <div class="controls">
             <button>Clear</button>
             <button>Download</button>
-            <button>Reset</button>
         </div>
         </div>
+
+        <div class="contact-links">
+            <p>
+                &copy; 2020 venkat | Link <a href ="https://github.com/VenkatProjects/Javascript-Photoapp" target="_blank"> Get Repo</a> |</br>
+            </br>Get more projects from here <a href = "https://github.com/VenkatProjects">Get More Projects</a>
+            </p>
+            <div class="icon">
+                <p>Follow by</p>
+               <pre>    <a href="https://github.com/VenkatProjects" class="fa fa-github">GitHub</a> | <a href="https://twitter.com/iamvenkatesank?s=09" class="fa fa-twitter">Twitter </a>   
+               </pre> 
+            </div>
+        </div>
+            
     </aside>
     <script src="style.js"></script>
 </body>

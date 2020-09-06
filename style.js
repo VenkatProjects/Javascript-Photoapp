@@ -19,7 +19,7 @@ function uploadImage(e)
    reader.onload = () =>
    {
        img.src = reader.result;
-       img.onload = () => {
+       img.onload = () => { 
            canvas.width = img.width;
            canvas.height = img.height;
            ctx.drawImage(img,0,0);
@@ -154,6 +154,7 @@ document.querySelectorAll("button")[5].addEventListener("click",gbr);
 document.querySelectorAll("button")[6].addEventListener("click",grb);
 document.querySelectorAll("button")[7].addEventListener("click",clearChanges);
 document.querySelectorAll("button")[8].addEventListener("click",download);
+
 
 
 const imageLoader = document.getElementById('uploader');
