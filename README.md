@@ -1,8 +1,14 @@
 # Simple Photo-App
 
-A simple photoapp for editing basic color effects using this app.
+A simple phot0app for editing basic color effects.
 
 ![PhotoApp](https://media.giphy.com/media/J2TjgDUEUuXuEbckcX/giphy.gif "Reference gif image")
+
+## Technologies
+- Html
+- CSS
+- Javascript
+## Features
 
 - Javascript photoapp
 - Select the Photo from your directory
