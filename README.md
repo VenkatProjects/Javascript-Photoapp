@@ -7,5 +7,8 @@ A simple photoapp for editing basic color effects using this app.
 - Javascript photoapp
 - Select the Photo from your directory
 - change the color effects as you want
-- If you want to change use ~clear~ option to clear current effect
+- If you want to change use *clear* option to clear current effect
 - Finally, you can download the photo
+
+##Reference
+[Fun-Javascript](https://fun-javascript-projects.com/course)
